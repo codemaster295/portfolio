@@ -20,6 +20,7 @@
 
 $(".burger").click(function() {
     $(".menu").slideToggle("slow");
+    $('.header').addClass('bg-white');
 });
 
 
@@ -32,9 +33,9 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 30) {
-        $(".header").addClass("bg-white ");
+        $(".header").addClass("scrollnav");
     } else {
-        $(".header").removeClass("bg-white ");
+        $(".header").removeClass("scrollnav");
     }
 });
 $(document).ready(function() {
@@ -240,5 +241,3 @@ function initMap() {
         map: map,
     });
 }
-
-// particles
